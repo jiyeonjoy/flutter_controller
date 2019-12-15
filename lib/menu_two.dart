@@ -24,6 +24,10 @@ class _MenuTwoState extends State<MenuTwo> with WidgetsBindingObserver {
 
   @override
   void initState() {
+    debugPrint('movieTitle: ${context.hashCode.toString()}');
+    debugPrint('movieTitle: $context');
+    debugPrint('movieTitle: ${context.findRenderObject()}');
+    debugPrint('movieTitle: ${context.size}');
     super.initState();
     // context this 안 넣어주면 에러뜸!!
     //Keyboard keyboard = Keyboard(context: this);

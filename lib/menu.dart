@@ -2,15 +2,20 @@ import 'package:flutter/material.dart';
 import 'package:flutter_exam1212/base/keyboard.dart';
 import 'package:flutter_exam1212/base/logger.dart';
 import 'package:flutter_exam1212/menu_two.dart';
+import 'package:flutter/foundation.dart';
+import 'dart:developer' as developer;
 
 class Menu extends StatefulWidget {
   @override
   _MenuState createState() => _MenuState();
+
 }
 
 
 
+
 class _MenuState extends State<Menu> with WidgetsBindingObserver {
+
 //  // 스크롤  컨트롤러 추가
 //  ScrollController _scrollController;
 
@@ -28,6 +33,9 @@ class _MenuState extends State<Menu> with WidgetsBindingObserver {
   @override
   void initState() {
     super.initState();
+    developer.log('log me', name: 'my.app.category');
+
+
 
 //    _scrollController = ScrollController();
 //    _scrollController.addListener(_scrollListener);
@@ -75,6 +83,7 @@ class _MenuState extends State<Menu> with WidgetsBindingObserver {
       buttonFlag = true;
       if (MediaQuery.of(context).viewInsets.bottom > 0.0) {
         buttonFlag = false;
+        logger.logPrint('menu', '키보드 다운');
       }
     } else {
       buttonFlag = false;

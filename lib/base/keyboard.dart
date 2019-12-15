@@ -87,8 +87,6 @@ class Keyboard  {
       _keyboardFlag = true;
       _scrollController.animateTo(scrollControllerHeight,
           duration: new Duration(milliseconds: 100), curve: Curves.ease);
-      if (MediaQuery.of(context).viewInsets.bottom > 0.0) {
-      }
     } else {
       /// 키보드가 내려간 경우
       _keyboardFlag = false;

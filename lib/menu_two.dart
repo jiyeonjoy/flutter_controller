@@ -144,7 +144,7 @@ class _MenuTwoState extends State<MenuTwo> with WidgetsBindingObserver {
                         color: Colors.white,
                       ),
                       onPressed: () {
-                        logger.printLogList();
+                        logger.printLogList(limit: 3);
                       },
                     ),
                   ),

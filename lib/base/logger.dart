@@ -57,14 +57,26 @@ import 'package:meta/meta.dart';
  }
 
 
- // 로그 전체 출력!!!
- void printLogList() {
+ // 로그 전체 출력!!! - 제한을 두면 거꾸로 최신부터 출력됨.
+ void printLogList({int limit}) {
   if(!kReleaseMode) {
-   for (String x in logList) {
-    debugPrint(x);
+
+   if(limit==null) {
+    for (String x in logList) {
+     debugPrint(x);
+    }
+   } else if(0 <limit && limit < logList.length) {
+    for(int i = logList.length-1; i>logList.length-1-limit; i--) {
+     debugPrint(logList[i]);
+    }
+   } else {
+    for (String x in logList) {
+     debugPrint(x);
+    }
    }
   }
  }
+
  // 디버그 모드 릴리즈 모드 구분할 수 있나?
 //  if(kReleaseMode){ // is Release Mode ??
 //  print('release mode');

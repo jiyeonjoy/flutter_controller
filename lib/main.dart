@@ -37,22 +37,29 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  int _counter = 0;
 
-  LoggerPrint logger = LoggerPrint();
+  int _counter = 0;
+  Logger logger;
+
+
+ //LoggerPrint logger = LoggerPrint();
 
   void _incrementCounter() {
     setState(() {
-      logger.logPrint('main', '잘되나?');
+     // logger.logPrint('main', '잘되나?');
       _counter++;
     });
   }
-
+  @override
+  void initState() {
+    logger = Logger(context);
+    super.initState();
+  }
   @override
   Widget build(BuildContext context) {
+//    logger.d('dddddddddddddddddddddd');
     return Scaffold(
       appBar: AppBar(
-
         title: Text(widget.title),
       ),
       body: Stack(

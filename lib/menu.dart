@@ -28,11 +28,17 @@ class _MenuState extends State<Menu> with WidgetsBindingObserver {
   bool buttonFlag = false;
   ////////////////////////////////////////////////////////////////////////////////
   // 로그
-  LoggerPrint logger = LoggerPrint();
+  //LoggerPrint logger = LoggerPrint();
+
+  Logger logger;
+
 
   @override
   void initState() {
     super.initState();
+
+    print('시작시작시작시작0000000000000');
+    logger = Logger(context);
     developer.log('log me', name: 'my.app.category');
 
 
@@ -53,6 +59,7 @@ class _MenuState extends State<Menu> with WidgetsBindingObserver {
 //    focusNode.dispose();
 //    _scrollController.dispose()
 
+  logger.log(message: 'RMXXXXXXXXXXXXXXXXXXXXXXXXXXXX');
   ////////////////////////////////////////////////////////////////////////////////
   keyboard.dispose();
   ////////////////////////////////////////////////////////////////////////////////
@@ -83,10 +90,12 @@ class _MenuState extends State<Menu> with WidgetsBindingObserver {
       buttonFlag = true;
       if (MediaQuery.of(context).viewInsets.bottom > 0.0) {
         buttonFlag = false;
-        logger.logPrint('menu', '키보드 다운');
+        logger.log(message: '키보드 올라왔어요~~~!!!');
+      //  Logger logger = Logger(context);  logger.logPrint('menu', '키보드 다운');
       }
     } else {
       buttonFlag = false;
+      logger.log(key: '키보드 내려왔어요~~~!!!', value: buttonFlag);
     }
     keyboard.didChangeMetrics();
     ////////////////////////////////////////////////////////////////////////////////
@@ -105,6 +114,7 @@ class _MenuState extends State<Menu> with WidgetsBindingObserver {
 
   @override
   Widget build(BuildContext context) {
+   // logger.d('dddddddddddddddddddddd22');
     return Scaffold(
       appBar: AppBar(
         title: Text('menu'),
@@ -144,7 +154,7 @@ class _MenuState extends State<Menu> with WidgetsBindingObserver {
 
   Widget buttonBlock() {
 //    return button_flag
-  print('===========================재빌드?????');
+//  print('===========================재빌드?????');
   // 직접 값 변경 안해주면 재빌드 안됨 ㅜㅜㅜㅜㅜ왜그러지?나도모름.....
   ////////////////////////////////////////////////////////////////////////////////
     return buttonFlag

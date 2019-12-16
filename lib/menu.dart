@@ -32,7 +32,7 @@ class _MenuState extends State<Menu> with WidgetsBindingObserver {
 
   Logger logger;
 
-
+  TextEditingController _textController;
   @override
   void initState() {
     super.initState();
@@ -50,6 +50,16 @@ class _MenuState extends State<Menu> with WidgetsBindingObserver {
   keyboard = Keyboard(context: this, textFieldCount: 1, scrollView: true, scrollControllerHeight: 800);
   ////////////////////////////////////////////////////////////////////////////////
 
+
+    _textController = TextEditingController();
+    _textController.addListener(() {
+      final newText = _textController.text.toLowerCase();
+      _textController.value = _textController.value.copyWith(
+        text: newText,
+        selection: TextSelection(baseOffset: newText.length, extentOffset: newText.length),
+        composing: TextRange.empty,
+      );
+    });
   }
 
 
@@ -64,6 +74,8 @@ class _MenuState extends State<Menu> with WidgetsBindingObserver {
   keyboard.dispose();
   ////////////////////////////////////////////////////////////////////////////////
     super.dispose();
+
+  _textController.dispose();
   }
 
   @override
@@ -137,6 +149,7 @@ class _MenuState extends State<Menu> with WidgetsBindingObserver {
                     Container(height: 500, color: Colors.red),
                     Container(height: 500, color: Colors.green),
                     TextField(
+                      controller: _textController,
                       //focusNode: focusNode,
                       ////////////////////////////////////////////////////////////////////////////////
                       focusNode: keyboard.getFocusNode(1),

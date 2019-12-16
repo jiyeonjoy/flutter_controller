@@ -38,7 +38,7 @@ class _MenuState extends State<Menu> with WidgetsBindingObserver {
     super.initState();
 
     print('시작시작시작시작0000000000000');
-    logger = Logger(context);
+    //logger = Logger(context);
     developer.log('log me', name: 'my.app.category');
 
 
@@ -59,7 +59,7 @@ class _MenuState extends State<Menu> with WidgetsBindingObserver {
 //    focusNode.dispose();
 //    _scrollController.dispose()
 
-  logger.log(message: 'RMXXXXXXXXXXXXXXXXXXXXXXXXXXXX');
+  //logger.log(message: 'RMXXXXXXXXXXXXXXXXXXXXXXXXXXXX');
   ////////////////////////////////////////////////////////////////////////////////
   keyboard.dispose();
   ////////////////////////////////////////////////////////////////////////////////
@@ -90,12 +90,12 @@ class _MenuState extends State<Menu> with WidgetsBindingObserver {
       buttonFlag = true;
       if (MediaQuery.of(context).viewInsets.bottom > 0.0) {
         buttonFlag = false;
-        logger.log(message: '키보드 올라왔어요~~~!!!');
+      //  logger.log(message: '키보드 올라왔어요~~~!!!');
       //  Logger logger = Logger(context);  logger.logPrint('menu', '키보드 다운');
       }
     } else {
       buttonFlag = false;
-      logger.log(key: '키보드 내려왔어요~~~!!!', value: buttonFlag);
+    //  logger.log(key: '키보드 내려왔어요~~~!!!', value: buttonFlag);
     }
     keyboard.didChangeMetrics();
     ////////////////////////////////////////////////////////////////////////////////

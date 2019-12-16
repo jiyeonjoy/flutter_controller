@@ -30,7 +30,7 @@ class _MenuTwoState extends State<MenuTwo> with WidgetsBindingObserver {
     //Keyboard keyboard = Keyboard(context: this);
     keyboard = Keyboard(context: this, textFieldCount: 1, scrollView: true, scrollControllerHeight: 0);
     print('시작시작시작시작00');
-    logger = Logger(context);
+  //  logger = Logger(context);
 //    _scrollController = ScrollController();
 //    _scrollController.addListener(_scrollListener);
 //    WidgetsBinding.instance.addObserver(this);
@@ -49,11 +49,12 @@ class _MenuTwoState extends State<MenuTwo> with WidgetsBindingObserver {
   void didChangeMetrics() {
 
     if (keyboard.focusNodeHasFocus()) {
-      logger.log(message: '저장저장저장저장');
+      Logger.i('저장저장저장저장');
       buttonFlag = true;
       if (MediaQuery.of(context).viewInsets.bottom > 0.0) {
         buttonFlag = false;
-        logger.log(message: 'RoROROROROROROROROROROR');
+        Logger.i('저장저장저장저장dddddddddddddddddddddddd');
+  //      logger.log(message: 'RoROROROROROROROROROROR');
       }
     } else {
       buttonFlag = false;
@@ -144,7 +145,7 @@ class _MenuTwoState extends State<MenuTwo> with WidgetsBindingObserver {
                         color: Colors.white,
                       ),
                       onPressed: () {
-                        logger.printLogList(limit: 3);
+                  //      logger.printLogList(limit: 3);
                       },
                     ),
                   ),

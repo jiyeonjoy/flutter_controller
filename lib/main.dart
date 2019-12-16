@@ -52,7 +52,7 @@ class _MyHomePageState extends State<MyHomePage> {
   }
   @override
   void initState() {
-    logger = Logger(context);
+    //logger = Logger(context);
     super.initState();
   }
   @override

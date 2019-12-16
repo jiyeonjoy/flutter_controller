@@ -138,7 +138,9 @@ class _MenuState extends State<Menu> with WidgetsBindingObserver {
                     Container(height: 500, color: Colors.green),
                     TextField(
                       //focusNode: focusNode,
+                      ////////////////////////////////////////////////////////////////////////////////
                       focusNode: keyboard.getFocusNode(1),
+                      ////////////////////////////////////////////////////////////////////////////////
                     ),
                     Container(height: 500, color: Colors.yellow),
                   ],

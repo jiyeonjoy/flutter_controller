@@ -39,7 +39,7 @@ class _MenuState extends State<Menu> with WidgetsBindingObserver {
 
     print('시작시작시작시작0000000000000');
     //logger = Logger(context);
-    developer.log('log me', name: 'my.app.category');
+    //developer.log('log me', name: 'my.app.category');
 
 
 
@@ -126,6 +126,7 @@ class _MenuState extends State<Menu> with WidgetsBindingObserver {
 
   @override
   Widget build(BuildContext context) {
+    Logger.i('시작ㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇ');
    // logger.d('dddddddddddddddddddddd22');
     return Scaffold(
       appBar: AppBar(

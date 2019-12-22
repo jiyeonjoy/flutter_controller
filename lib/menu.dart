@@ -52,14 +52,7 @@ class _MenuState extends State<Menu> with WidgetsBindingObserver {
 
 
     _textController = TextEditingController();
-    _textController.addListener(() {
-      final newText = _textController.text.toLowerCase();
-      _textController.value = _textController.value.copyWith(
-        text: newText,
-        selection: TextSelection(baseOffset: newText.length, extentOffset: newText.length),
-        composing: TextRange.empty,
-      );
-    });
+
   }
 
 
@@ -126,7 +119,7 @@ class _MenuState extends State<Menu> with WidgetsBindingObserver {
 
   @override
   Widget build(BuildContext context) {
-    Logger.i('시작ㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇ');
+    Logger.i('시작ㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇ', context: context);
    // logger.d('dddddddddddddddddddddd22');
     return Scaffold(
       appBar: AppBar(
@@ -148,6 +141,23 @@ class _MenuState extends State<Menu> with WidgetsBindingObserver {
                 child: new Column(
                   children: <Widget>[
                     Container(height: 500, color: Colors.red),
+                    new Container(
+                      width: 300.0,
+                      height: 104.0,
+                      color: Colors.yellow,
+                      child: new Image.asset(
+                        'assets/images/img@3x.png',
+                        //fit: BoxFit.contain,
+                        //fit: BoxFit.cover,
+                        //fit: BoxFit.fill,
+                        //fit: BoxFit.fitHeight,
+                        //fit: BoxFit.fitWidth,
+                        //fit: BoxFit.none,
+                        //fit: BoxFit.scaleDown,
+                        width: 10.0,
+                        height: 10.0,
+                      ),
+                    ),
                     Container(height: 500, color: Colors.green),
                     TextField(
                       controller: _textController,
@@ -169,6 +179,7 @@ class _MenuState extends State<Menu> with WidgetsBindingObserver {
   }
 
   Widget buttonBlock() {
+    Logger.i('버튼이네...................');
 //    return button_flag
 //  print('===========================재빌드?????');
   // 직접 값 변경 안해주면 재빌드 안됨 ㅜㅜㅜㅜㅜ왜그러지?나도모름.....

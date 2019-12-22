@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_exam1212/base/logger.dart';
 import 'package:meta/meta.dart';
 
 class Keyboard  {
@@ -41,6 +42,7 @@ class Keyboard  {
 
   _scrollListener() {
     if (_keyboardFlag) {
+      Logger.i('이거는 스크롤컨트롤러 입니다.', thisClass: this);
       _keyboardFlag = false;
       _scrollController.animateTo(scrollControllerHeight,
           duration: new Duration(milliseconds: 100), curve: Curves.ease);
@@ -60,6 +62,7 @@ class Keyboard  {
 
   // 1부터 시작!!
   FocusNode getFocusNode(int i) {
+    Logger.i('이거는 겟포커스 노드 입니다.', thisClass: this);
     return _focusNode[i - 1];
   }
 

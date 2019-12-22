@@ -1,0 +1,190 @@
+{
+  "sell_home": [
+    {
+      "title": "판매",
+      "tab_home": "홈",
+      "tab_store": "스토어",
+      "tab_seller_guide": "셀러 가이드",
+      "tab_promotion": "프로모션",
+      "home_new_store": "신규 스토어",
+      "home_seller_guide": "셀러 필수 가이드",
+
+      "cafe24": "Cafe24",
+      "seller_hub": "셀러허브",
+      "lazada": "LAZADA",
+      "gmarket" : "G마켓",
+      "11street" : "11번가"
+    }
+  ],
+
+  "sell_store": [
+    {
+      "all" : "전체",
+      "independence_mall" : "독립몰",
+      "specialize_mall" : "전문몰",
+      "general_mall" : "종합몰",
+      "open_market" : "오픈마켓",
+      "disconnected" : "미연동",
+      "interlockable_store" : "연동 가능 스토어",
+      "normal_store" : "일반 스토어"
+    }
+  ],
+
+  "sell_store_detail": [
+    {
+      "go_store" : "스토어 가기",
+      "connection_page" : "연동하기",
+      "admin_page" : "관리자 가기",
+      "disconnection" : "연동 해제"
+    }
+  ],
+
+  "sell_store_connection": [
+    {
+      "connection": "연동하기",
+      "sign_up": "가입하기"
+    }
+  ],
+
+  "my_products": [
+    {
+      "last_edited": "Last Edited",
+      "title": "상품"
+    }
+  ],
+
+  "my_products_filter": [
+    {
+      "alignment": "정렬,",
+      "date_of_registration": "상품등록일순",
+      "modified_date": "상품수정일순",
+      "named": "상품명순",
+      "cumulative_sale" : "누적판매수",
+      "lower_price": "판매가낮은순",
+      "higher_price": "판매가높은순",
+      "delivery_fee": "배송비",
+      "free": "무료",
+      "pay": "유료",
+      "seller_channel": "판매채널",
+      "confirm": "확인"
+    }
+  ],
+
+  "add_image": [
+    {
+      "title": "상품 등록하기",
+      "select_img_msg": "상품 이미지를 올려주세요.",
+      "product_img": "상품 이미지",
+      "default_img_msg": "첫번째 이미지는 썸네일 이미지로 적용됩니다."
+    }
+  ],
+
+  "add_product": [
+    {
+      "title" : "상품 등록하기",
+      "text": "상품 정보를 입력해주세요",
+      "keyword": "상품 키워드",
+      "keyword_info1": "상품과 연관된 모든 키워드를 선택해주세요.",
+      "keyword_info2": "정확할 수록 좋습니다.",
+      "name": "상품명",
+      "name_info1": "상품명을 입력해주세요.",
+      "name_info2": "간단하고 자세한 상품명일 수록 좋습니다.",
+      "category": "카테고리",
+      "category_info": "카테고리를 선택해주세요.",
+      "category_select": "카테고리 선택",
+      "example_text1": "체크무늬 셔츠",
+      "example_text2": "빈폴 S/S 2020 남성 캐주얼 체크무늬 버튼다운 셔츠"
+    }
+  ],
+
+  "add_store": [
+    {
+      "title": "상품 등록하기",
+      "select_store_msg": "상품을 등록하고 싶은 스토어를 선택해주세요.",
+      "cafe24": "CAFE24",
+      "seller_hub": "셀러허브,",
+      "lazada": "LAZADA Malaysia",
+      "shopify": "Shopify",
+      "mall_inde": "독립몰",
+      "mall_open": "오픈마켓",
+      "url": [
+        "http://cf.joara.com/literature_file/20190427_235346.jpg_thumb.png",
+        "https://cdn.imweb.me/upload/S201807025b39d1981b0b0/5cad8fb10687d.jpg",
+        "https://write.dcinside.com/viewimage.php?id=fromsoftware&no=24b0d769e1d32ca73fef85fa11d02831beed24700845ca5273c6c35de56bd4c7fa8a2895f889a18768d182c2126d77bc97cb6aec748183ad6b362f702e41a643e593bc1b97f8",
+        "http://file.thisisgame.com/upload/tboard/user/2014/01/10/20140110014908_2620.jpeg",
+        "http://file.thisisgame.com/upload/tboard/user/2014/01/10/20140110014908_2620.jpeg"
+      ],
+      "store_name": [
+        "CAFE24",
+        "LAZADA Malaysia",
+        "셀러허브",
+        "Shopify",
+        "Shopify"
+      ],
+      "category": [
+        "독립몰",
+        "오픈마켓",
+        "오픈마켓",
+        "오픈마켓",
+        "오픈마켓"
+      ]
+    }
+  ],
+
+  "sub": [
+    {
+      "title": "스토어카메라 Plans",
+      "level_basic": "Basic",
+      "level_pro": "Pro",
+      "explain_message": "최대 3개의 스토어에 동시 상품등록을 할 수 있습니다. 주문, 문의, 배송, 재고까지 한 곳에서 한 눈에 관리가 가능하며, 2개의 다른 디바이스에 스토어카메라 계정을 사용해보세요.",
+      "year": "1년 플랜",
+      "year_total_price": "$118.80",
+      "year_part_price": "($9.90 / month)",
+      "year_message": "1년마다 결제",
+      "six_month": "6개월 플랜",
+      "six_month_total_price": "$77.40",
+      "six_month_part_price": "($12.90 / month)",
+      "six_month_message": "6개월마다 결제",
+      "month": "1개월 플랜",
+      "month_total_price": "$14.90",
+      "month_part_price": "($14.90 / month)",
+      "month_message": "1개월마다 결제",
+      "free_button": "한 달 무료 체험하기"
+    }
+  ],
+
+  "set": [
+    {
+      "title": "Setting",
+      "account": "Account",
+      "account_camera_pro": "스토어카메라 Pro",
+      "sub_manage": "구독 관리",
+      "pwd_reset": "비밀번호 재설정하기",
+      "camera": "Camera",
+      "screen_set": "처음 화면 설정하기",
+      "camera_set": "촬영 설정하기",
+      "contact": "Contact",
+      "version_info": "버전 정보",
+      "version_num": "3.2.2",
+      "app_rule": "이용약관 및 개인정보처리방침",
+      "contact_us": "문의하기",
+      "logout": "로그아웃"
+    }
+  ],
+
+  "my": [
+    {
+      "title": "MY",
+      "new_order": "신규주문",
+      "delivery_ready": "배송준비",
+      "cancel_req": "취소요청",
+      "product_add": "상품 추가",
+      "order": "주문",
+      "stock": "재고",
+      "product": "상품",
+      "cancel_return": "취소-반품",
+      "peristalsis_store": "연동 스토어",
+      "notice_title": "Notices"
+    }
+  ]
+}

@@ -1,6 +1,5 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:meta/meta.dart';
 
 //enum Level {
 // verbose,
@@ -10,6 +9,7 @@ import 'package:meta/meta.dart';
 // error,
 //}
 
+
 class Logger {
 
  static final List _logList = <String>[];
@@ -17,11 +17,26 @@ class Logger {
 
  Logger();
 
- factory Logger.i(String message){
-  String outputMessage = '${_logger._time()} : $message';
-  _logList.add(outputMessage);
-  print(outputMessage);
-  return _logger;
+ factory Logger.i(String message, {BuildContext context, var thisClass}){
+  if (!kReleaseMode) {
+   String className;
+   String outputMessage;
+   if (context != null) {
+    int idx = context.toString().indexOf('(');
+    className = context.toString().substring(0, idx);
+   } else if (thisClass != null) {
+    className = thisClass.runtimeType.toString();
+   }
+   if (className != null) {
+    outputMessage = '${_logger._time()} : $className : $message';
+   } else {
+    outputMessage = '${_logger._time()} : $message';
+   }
+   _logList.add(outputMessage);
+   debugPrint(outputMessage);
+   print('${StackTrace.current.toString()} ddddddddddddddddd');
+  }
+   return _logger;
  }
 
  String _time(){
